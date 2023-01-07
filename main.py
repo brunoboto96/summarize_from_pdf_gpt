@@ -90,7 +90,6 @@ def convert_pdf_to_txt(step: int):
     #                 summaries.append(summary)
     # # Merge the summaries into one
     # full_summary = "\n\n".join(summaries)
-
     ###### Using ThreadPoolExecutor but rate limited =)
     # Set the rate limit in seconds
     rate_limit = 1 / 25
@@ -219,8 +218,10 @@ def split_text_to_chunks(text: str, max_tokens: int) -> List[str]:
 
 import openai
 
+from api_key import key
+
 # Set the API key
-openai.api_key = "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"
+openai.api_key = key
 
 
 def generate_summary(text):
