@@ -40,6 +40,7 @@ def convert_pdf_to_txt(step: int):
     # print(chunks[20])
     # print('first chunk:', chunks[0])
     # return  # UNCOMMENT to check token count and price estimate before sending
+
     ###### Using Parallel
     # from joblib import Parallel, delayed
 
@@ -65,8 +66,6 @@ def convert_pdf_to_txt(step: int):
     # )
 
     import concurrent.futures
-
-    ###### Using ThreadPoolExecutor but rate limited =)
     import time
 
     ###### Using ThreadPoolExecutor
@@ -91,6 +90,8 @@ def convert_pdf_to_txt(step: int):
     #                 summaries.append(summary)
     # # Merge the summaries into one
     # full_summary = "\n\n".join(summaries)
+
+    ###### Using ThreadPoolExecutor but rate limited =)
     # Set the rate limit in seconds
     rate_limit = 1 / 25
     # Set the maximum number of threads
