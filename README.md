@@ -1,6 +1,6 @@
 ### Summarize_Text_with_GPT
 
-Use this script to summarize the text of a document.pdf file into smaller bits, using openai API.
+ggit@github.com:brunoboto96/summarize_from_pdf_gpt.git
 
 ## RUN code
 
@@ -10,4 +10,5 @@ add a document.pdf not sure if it needs to be clean of images, might need to aut
 
 python main.py
 
+Run once then:
 uncomment line 42 to initiate summary
