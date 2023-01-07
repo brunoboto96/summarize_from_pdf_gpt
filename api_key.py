@@ -1,1 +1,1 @@
-key = ""
+key = "sk-test"
